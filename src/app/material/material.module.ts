@@ -50,4 +50,8 @@ MatCardModule,
     MatBadgeModule
   ]
 })
+<<<<<<< HEAD
 export class MaterialdesignModule { }
+=======
+export class MaterialdesignModule { }
+>>>>>>> 3eb50dbe105e2b854a862a96c969fa9ba8403071
