@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ValidationService } from '../validation.service';
+import { ValidatiomService } from '../validation.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -9,7 +9,7 @@ import { ValidationService } from '../validation.service';
 export class LoginComponent implements OnInit {
 
   constructor(private route:Router,
-    public service:ValidationService) {
+    public service:ValidatiomService) {
 
   }
 
@@ -23,4 +23,5 @@ export class LoginComponent implements OnInit {
 
 
 }
+
 
