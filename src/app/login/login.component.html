@@ -1,1 +1,43 @@
+<!-- <p>
+  <mat-toolbar color="primary">
+    <span>My Application</span>
+  </mat-toolbar>
+</p> -->
+
+
+<div class="but">
+
+  <button mat-button class="Close-icon" matSuffix [mat-dialog-close]="true">
+  <mat-icon>close</mat-icon>
+  </button>
+  </div>
+
+  <form [formGroup]="service.formValidate">
+  <mat-grid-list cols="2" rowHeight="300px">
+  <mat-grid-tile>
+  <div class="example-container">
+  <mat-form-field appearance="fill">
+  <mat-label>Enter your email</mat-label>
+   <input formControlName="Email" matInput placeholder="hi@example.com"required>
+  </mat-form-field>
+  <div>
+
+  <mat-form-field apperance="fill">
+  <mat-label>Enter your Password:</mat-label>
+  <input formControlName="Password" type="password" matInput placeholder="Right Password" required>
+  </mat-form-field>
+  </div>
+  </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div>
+  <button mat-icon-button class="example-icon favorite-icon"  [disabled]="service.formValidate.invalid">Login <mat-icon fontIcon="login"></mat-icon>
+  </button>   <br> <br>
+  <button mat-icon-button class="example-icon" (click)="ClearValue()" fontIcon="clear_all">Clear
+      <mat-icon fontIcon="app_registration"></mat-icon>
+  </button>
+  </div>
+  </mat-grid-tile>
+  </mat-grid-list>
+  </form>
 
