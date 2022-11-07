@@ -15,6 +15,7 @@ import {MatBadgeModule} from '@angular/material/badge';
 import {MatCardModule} from '@angular/material/card';
 
 
+
 @NgModule({
   declarations: [],
   imports: [
@@ -31,7 +32,11 @@ MatCardModule,
     MatToolbarModule,
     MatFormFieldModule,
     FormsModule,
+    FormsModule,
+    MatButtonModule,
+    MatIconModule,
     MatBadgeModule
+
   ],
   exports:[
 
