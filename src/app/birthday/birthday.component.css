@@ -1,0 +1,117 @@
+
+.service .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:1.5rem;
+}
+.service .box-container .box{
+    border-radius: .5rem;
+    background:#333;
+    text-align: center;
+    padding:2.5rem;
+}
+h3{
+    font-family: monospace;
+}
+.service .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    background:var(--main-color);
+    color:#fff;
+}
+
+.service .box-container .box h3{
+    font-size: 2rem;
+    color: rgb(127, 114, 250);
+    padding:1rem 0;
+}
+
+.service .box-container .box p{
+    font-size: 1.4rem;
+    color:#eee;
+    line-height: 1.8;
+}
+.service .box-container{
+display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+}
+
+.price .box-container .box{
+    padding:2rem 0;
+    background:#333;
+    border-radius: .5rem;
+    text-align: center;
+}
+.service .box-container .box{
+    padding:2rem 0;
+    background:#333;
+    border-radius: .5rem;
+}
+
+.price .box-container .box:hover{
+    transform: scale(1.03);
+}
+.service .box-container .box:hover{
+    transform: scale(1.03);
+}
+
+.price .box-container .box .title{
+    background:var(--main-color);
+    color:#fff;
+    padding:1.5rem 0;
+    font-size: 2rem;
+}
+.service .box-container .box .title{
+    background:var(--main-color);
+    color:#fff;
+    padding:1.5rem 0;
+    font-size: 2rem;
+}
+
+.price .box-container .box .amount{
+    color:#fff;
+    padding-top: 2rem;
+    font-size: 4rem;
+}
+.service .box-container .box .amount{
+    color:#fff;
+    padding-top: 2rem;
+    font-size: 4rem;
+}
+
+.price .box-container .box ul{
+    list-style-type: none;
+    padding:1rem 0;
+}
+
+.service .box-container .box ul{
+    list-style-type: none;
+    padding:1rem 0;
+}
+
+.price .box-container .box ul li{
+    font-size: 1.5rem;
+    color:#eee;
+    padding:1rem 0;
+}
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
