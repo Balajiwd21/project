@@ -13,7 +13,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatCardModule} from '@angular/material/card';
-
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @NgModule({
@@ -21,6 +22,8 @@ import {MatCardModule} from '@angular/material/card';
   imports: [
     CommonModule,
 MatCardModule,
+MatTabsModule,
+MatCheckboxModule,
     MatButtonModule,
     MatDialogModule,
     MatInputModule,
@@ -43,6 +46,8 @@ MatCardModule,
     MatCardModule,
     MatButtonModule,
     MatDialogModule,
+    MatCheckboxModule,
+    MatTabsModule,
     MatInputModule,
     MatSnackBarModule,
     MatGridListModule,
