@@ -10,6 +10,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { WeddingComponent } from './wedding/wedding.component';
 import { ConcertComponent } from './concert/concert.component';
+import { MaterialdesignModule } from './material/material.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ConcertComponent } from './concert/concert.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialdesignModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
