@@ -1,43 +1,146 @@
-<!-- <p>
-  <mat-toolbar color="primary">
-    <span>My Application</span>
-  </mat-toolbar>
-</p> -->
 
+<div class="login-page">
+    <button mat-button class="Close-icon" matSuffix [mat-dialog-close]="true">
+      <mat-icon>close</mat-icon>
+      </button>
+    <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
+      <mat-tab label="Sign In">
+          <mat-card-content>
+            <form action="">
+              <mat-form-field>
+                <input
+                  matInput
+                  placeholder="Email"
+                  required
+                  name="email"
+                  ngModel
+                  #email="ngModel">
+                  <mat-error *ngIf="email.invalid">Email is required</mat-error>
+                <mat-icon matSuffix>email</mat-icon>
+              </mat-form-field>
+              <mat-form-field>
+                <input
+                  matInput
+                  placeholder="Password"
+                  type="password"
+                  required
+                  minlength="6"
+                  name="password"
+                  ngModel
+                  #password="ngModel">
+                  <mat-error
+                    *ngIf="password.errors && password.errors.required">
+                    Password is required
+                  </mat-error>
+                  <mat-error
+                    *ngIf="password.errors && password.errors.minlength">
+                    Password must be of length 6
+                  </mat-error>
+                <mat-icon matSuffix>lock</mat-icon>
+              </mat-form-field>
+              <mat-checkbox>Remember Me!</mat-checkbox>
+              <button
+                mat-raised-button
+                color="primary"
+                class="login-button">
+                Sign In
+              </button>
 
-<div class="but">
+              <button
+                mat-raised-button
+                class="login-button">
+                Login with Google
+              </button>
+            </form>
+          </mat-card-content>
+      </mat-tab>
+      <mat-tab label="Sign Up">
+        <mat-card-content>
+          <form action="">
+            <mat-form-field>
+              <input
+                matInput
+                placeholder="User Name"
+                required
+                name="username"
+                ngModel
+                #username="ngModel">
+              <mat-icon matSuffix>perm_identity</mat-icon>
+              <mat-error
+                *ngIf="username.invalid">
+                Username is required
+              </mat-error>
 
-  <button mat-button class="Close-icon" matSuffix [mat-dialog-close]="true">
-  <mat-icon>close</mat-icon>
-  </button>
-  </div>
+            </mat-form-field>
+            <mat-form-field>
+              <input
+                matInput
+                placeholder="Email"
+                required
+                name="email"
+                ngModel
+                #email="ngModel">
+                <mat-error *ngIf="email.invalid">Email is required</mat-error>
+              <mat-icon matSuffix>email</mat-icon>
+            </mat-form-field>
+            <mat-form-field>
+              <span matPrefix>+91 &nbsp;</span>
+              <input
+                matInput
+                placeholder="Mobile No."
+                required
+                name="tel"
+                ngModel
+                #tel="ngModel">
+                <mat-error *ngIf="tel.invalid">Mobile No is required</mat-error>
+              <mat-icon matSuffix>mode_edit</mat-icon>
+            </mat-form-field>
+            <mat-form-field>
+              <input
+                matInput
+                placeholder="Password"
+                type="password"
+                required
+                minlength="6"
+                name="password"
+                ngModel
+                #password="ngModel">
+                <mat-error
+                  *ngIf="password.errors && password.errors.required">
+                  Password is required
+                </mat-error>
+                <mat-error
+                  *ngIf="password.errors && password.errors.minlength">
+                  Password must be of length 6
+                </mat-error>
+              <mat-icon matSuffix>lock</mat-icon>
 
-  <form [formGroup]="service.formValidate">
-  <mat-grid-list cols="2" rowHeight="300px">
-  <mat-grid-tile>
-  <div class="example-container">
-  <mat-form-field appearance="fill">
-  <mat-label>Enter your email</mat-label>
-   <input formControlName="Email" matInput placeholder="hi@example.com"required>
-  </mat-form-field>
-  <div>
-
-  <mat-form-field apperance="fill">
-  <mat-label>Enter your Password:</mat-label>
-  <input formControlName="Password" type="password" matInput placeholder="Right Password" required>
-  </mat-form-field>
-  </div>
-  </div>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <div>
-  <button mat-icon-button class="example-icon favorite-icon"  [disabled]="service.formValidate.invalid">Login <mat-icon fontIcon="login"></mat-icon>
-  </button>   <br> <br>
-  <button mat-icon-button class="example-icon" (click)="ClearValue()" fontIcon="clear_all">Clear
-      <mat-icon fontIcon="app_registration"></mat-icon>
-  </button>
-  </div>
-  </mat-grid-tile>
-  </mat-grid-list>
-  </form>
+            </mat-form-field>
+            <mat-form-field>
+                <input
+                matInput
+                placeholder="Password"
+                type="password"
+                required
+                minlength="6"
+                name="repassword"
+                ngModel
+                #repassword="ngModel">
+                <mat-error
+                  *ngIf="repassword.errors && repassword.errors.required">
+                  Re-Enter Password is required
+                </mat-error>
+              <mat-icon matSuffix>lock</mat-icon>
+            </mat-form-field>
+            <button
+              mat-raised-button
+              color="primary"
+              class="login-button">
+              Sign Up
+            </button>
+          </form>
+        </mat-card-content>
+      </mat-tab>
+    </mat-tab-group>
+</div>
 
