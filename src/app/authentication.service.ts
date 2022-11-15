@@ -8,6 +8,11 @@ import { HttpClient } from '@angular/common/http';
 export class AuthenticationService {
   constructor(private router:Router,private http:HttpClient) { }
 
+<<<<<<< HEAD
+=======
+  constructor(private router:Router,private http:HttpClient) { }
+
+>>>>>>> bef19dc974a70362ddd914b45597378aa8245ed2
   isAuthenticated():boolean{
 
     if (sessionStorage.getItem('token')!==null) {
@@ -112,4 +117,8 @@ export class AuthenticationService {
     sessionStorage.removeItem('token');
 
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> bef19dc974a70362ddd914b45597378aa8245ed2
