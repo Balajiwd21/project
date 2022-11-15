@@ -1,19 +1,19 @@
 <header class="header">
 
-    <a href=" " class="logo"><span>e</span>vento</a>
+    <a href="javascript:void(0)" class="logo"><span>e</span>vento</a>
 
     <div id="menu-bars" class="fas fa-bars"></div>
 
 
 <nav class="navbar">
-    <a href="#home">home</a>
-    <a href="#service">service</a>
-    <a href="#about">about</a>
-    <a href="#gallery">gallery</a>
-    <a href="#price">price</a>
-    <a href="#review">review</a>
-    <a href="#contact">contact</a>
-    <a href="#login">Login</a>
+    <a href="home">home</a>
+    <a href="service">service</a>
+    <a href="about">about</a>
+    <a href="gallery">gallery</a>
+    <a href="price">price</a>
+    <a href="review">review</a>
+    <a href="contact">contact</a>
+    <a href="login">Login</a>
 </nav>
 </header>
 <!-- header section ends -->
@@ -25,16 +25,40 @@
     <div class="content">
         <h3>For<span> Birthdays </span></h3>
     </div>
-
-    <div class="swiper-container home-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="assets/1.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="assets/2.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="assets/3.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="assets/4.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="assets/5.jpg" alt=""></div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="assets/1.2.jpg" alt="Los Angeles" style="width:100%;">
+          </div>
+    
+          <div class="item">
+            <img src="assets/2.jpg" alt="Chicago" style="width:100%;">
+          </div>
+        
+          <div class="item">
+            <img src="assets/3.jpg" alt="New york" style="width:100%;">
+          </div>
         </div>
-    </div>
+    
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+     
 
 </section>
 
@@ -176,35 +200,26 @@
 
         <div class="box">
             <h3>branches</h3>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> mumbai </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> jogeshwari </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> goregaon </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> navi mumbai </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> andheri </a>
+            <a href="javascript:void(0)"> <i class="fas fa-map-marker-alt"></i> mumbai </a>
+            <a href="javascript:void(0)"> <i class="fas fa-map-marker-alt"></i> jogeshwari </a>
+            <a href="javascript:void(0)"> <i class="fas fa-map-marker-alt"></i> goregaon </a>
+            <a href="javascript:void(0)"> <i class="fas fa-map-marker-alt"></i> navi mumbai </a>
+            <a href="javascript:void(0)"> <i class="fas fa-map-marker-alt"></i> andheri </a>
         </div>
 
       
 
         <div class="box">
             <h3>contact info</h3>
-            <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
-            <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
-            <a href="#"> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </a>
-            <a href="#"> <i class="fas fa-envelope"></i> anasshaikh@gmail.com </a>
-            <a href="#"> <i class="fas fa-map-marker-alt"></i> mumbai, india - 400104 </a>
+            <a href="javascript:void(0)"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="javascript:void(0)"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="javascript:void(0)"> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </a>
+            <a href="javascript:void(0)"> <i class="fas fa-envelope"></i> anasshaikh@gmail.com </a>
+            <a href="javascript:void(0)"> <i class="fas fa-map-marker-alt"></i> mumbai, india - 400104 </a>
         </div>
 
 
     </div>
 
 
-</section>
-
-<!-- footer section ends -->
-
-<!-- theme toggler  -->
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
+</section>  

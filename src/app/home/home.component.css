@@ -1,13 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
-
-
 
 .service .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     gap:1.5rem;
 }
-
 .service .box-container .box{
     border-radius: .5rem;
     background:#333;
@@ -15,6 +11,18 @@
     padding:2.5rem;
 }
 
+.item{
+    width: 100%;
+    margin: 1ex;
+    padding: 1ex;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+h3{
+    font-family: monospace;
+}
 .service .box-container .box i{
     height: 6rem;
     width: 6rem;
@@ -27,7 +35,7 @@
 
 .service .box-container .box h3{
     font-size: 2rem;
-    color:#fff;
+    color: rgb(127, 114, 250);
     padding:1rem 0;
 }
 
@@ -117,58 +125,3 @@ display: grid;
     }
 
 }
-
-@media (max-width:768px){
-
-    #menu-bars{
-        display: initial;
-    }
-
-    .header .navbar{
-        position: absolute;
-        top:100%; left:0; right:0;
-        border-top: .1rem solid #222;
-        background: #333;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    .header .navbar.active{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    .fa-times{
-        transform: rotate(180deg);
-    }
-
-    .header .navbar a{
-        display: flex;
-        background:#222;
-        border-radius: .5rem;
-        padding:1.3rem;
-        margin:1.3rem;
-        font-size: 2rem;
-    }
-
-    .home .content h3{
-        font-size: 4rem;
-    }
-
-}
-
-@media (max-width:450px){
-
-    html{
-        font-size: 50%;
-    }
-
-    .home .home-slider .swiper-slide{
-        width: 27rem;
-    }
-
-    .contact form .inputBox input{
-        width: 100%;
-    }
-
-}
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
